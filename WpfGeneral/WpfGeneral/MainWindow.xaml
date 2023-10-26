@@ -5,13 +5,150 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfGeneral"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel>
-            <Label/>
-            <TextBox/>
-            <TextBox/>
-            <Button/>
-        </StackPanel>
+        Title="MainWindow" Height="600" Width="350">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="0"
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Right"
+               FontSize="60"
+               Grid.ColumnSpan="4"/>
+
+        <Button Margin="5"
+                Content="AC"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="1" Background="#FFB4D9FF"/>
+        <Button Margin="5"
+                Content="+/1"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="1"
+                Grid.Column="1"
+                Background="#FFB4D9FF"/>
+        <Button Margin="5"
+                Content="%"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="1"
+                Grid.Column="2"
+                Background="#FFB4D9FF"/>
+        <Button Margin="5"
+                Content="/"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="1"
+                Grid.Column="3"
+                Background="#FFB4D9FF"/>
+        <Button Margin="5"
+                Content="*"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="2"
+                Grid.Column="3"
+                Background="#FFB4D9FF"/>
+        <Button Margin="5"
+                Content="-"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="3"
+                Grid.Column="3"
+                Background="#FFB4D9FF"/>
+        <Button Margin="5"
+                Content="+"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="4"
+                Grid.Column="3"
+                Background="#FFB4D9FF"/>
+        <Button Margin="5"
+                Content="="
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="5"
+                Grid.Column="3"
+                Background="#FFB4D9FF"/>
+
+        <Button Margin="5"
+                Content="7"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="2"
+                Grid.Column="0"/>
+        <Button Margin="5"
+                Content="8"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="2"
+                Grid.Column="1"/>
+        <Button Margin="5"
+                Content="9"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="2"
+                Grid.Column="2"/>
+        <Button Margin="5"
+                Content="4"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="3"
+                Grid.Column="0"/>
+        <Button Margin="5"
+                Content="5"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="3"
+                Grid.Column="1"/>
+        <Button Margin="5"
+                Content="6"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="3"
+                Grid.Column="2"/>
+        <Button Margin="5"
+                Content="1"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="4"
+                Grid.Column="0"/>
+        <Button Margin="5"
+                Content="2"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="4"
+                Grid.Column="1"/>
+        <Button Margin="5"
+                Content="3"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="4"
+                Grid.Column="2"/>
+        <Button Margin="5"
+                Content="0"
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"/>
+        <Button Margin="5"
+                Content="."
+                FontSize="25"
+                FontFamily="Impact"
+                Grid.Row="5"
+                Grid.Column="2"/>
     </Grid>
 </Window>
